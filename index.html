@@ -1,54 +1,31 @@
-<TITLE>Developing and Configuring iWay Service Manager EDI Solutions</TITLE>
-</HEAD>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Sathya Chandi Mandali</title>
+  <meta name="description" content="SSCM | Sri Sathya Chandi Mandali" />
+  <meta name="keywords" content="Sri, Sathya, Chandi, Mandali, SSCM" />
+  <meta name="author" content="SSCM" />
+</head>
+<body>
+<div id="mainDiv" style="position: fixed; width: 100%; height: 0; padding-top: 140.9524%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: fixed; width: 100%; height: 100vh; top: 0; left: 0; border: none; padding: 0;margin: 0;background-color='#fffdf9';"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGMBnauTbY&#x2F;xT0vaGeKYTNxOCM3BQtI0Q&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen" allowtransparency="true">
+  </iframe>
+</div>
+<!--<script type="text/javascript">
+	var x = document.querySelector("iframe");
 
-<BODY>
-<br>
-<div>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tbody><tr>
-      <td style="color: rgb(54, 105, 156); font-size: 18pt;"><nobr>iWay Service Manager Create Channel</nobr></td>
-    </tr>
-  </tbody></table>
-	 <!--------------------------------------------------------------------------------------->
-	<hr>
-	The concept of a channel has been introduced to assist in the construction of message flows in iWay Service Manager.
-	 A channel serves as a container for all your components that simplifies the integration design process and improves organization, versioning, and troubleshooting. 
-	 A channel contains the following conduits that must be configured and associated with the channel.
-	<br><br>
-	 <!--------------------------------------------------------------------------------------->
-	<hr>
-	<center><b>Anatomy of a Channel</b></center>
-	<br><br>
-	<center><img src="../icons/channel.jpg" height="200" width="750"></center>
-	<table>
-		<tr>
-			<td><img src="..\icons\channel_inlet.jpg" width="200" height="200" ></td>
-			<td><a href="configuringInlet.html">Inlet</a>: Each inlet contains a sequence of components defined as follows:
-            <br/><a href="addListener.html">Listener</a> ==> <a href="addDecryptor.html">Decryptor</a> ==> <a href="addPreparser.html">Preparser</a>
-			<br/>Listeners are defined as protocol handlers and are responsible for startup, shutdown, and obtaining the incoming messages. Listeners recieve the messages from the transport protocol, set special registers such as header values, input source, etc. and then pass the message off to a decryptor.
-		</td>
-		</tr>
-		<tr>
-			<td><img src="..\icons\channel_route.jpg" width="200" height="200"></td>
-			<td><a href="Route:???.html">Route</a>: Routes contain references to <a href="definingTransformer.html">Transformers</a>, <a href="Processes:???.html">Processes</a> and Outlets. A Route describes the path that a document takes during its passage through the system. 
-			It is the job of the inlet to convert the input message to a processable document.
-			Transformers convert the document information to a common format suitable for general business processing.
-			For example, similar messages from two trading partners might differ slightly in format; a common format is often desirable for business processing.
-		</td>
-		</tr>
-		<tr>
-			<td><img src="..\icons\channel_outlet.jpg" width="200" height="200"></td>
-			<td><a href="Outlet:???.html">Outlet</a>: Outlets contain references to <a href="Preemitters:???.html">Preemitters</a>, <a href="Encryptors:???.html">Encryptors</a> and <a href="Emitters:???.html">Emitters</a>. 
-			Once a document has been processed, it must be sent on to one or more designated recipients. 
-			This is the job of the outlet. The outlet is responsible for all aspects of preparing the document for emission and then emitting it.
-			Outlets contain a sequence of components tailored for this task.
-			Multiple outlets can be configured for a single message flow. Each outlet encorporates all of the components needed to send the message to its destination.</td>
-		</tr>
-			
-	</table>
-	
-	 <!--------------------------------------------------------------------------------------->
-	
-</BODY>
-
-</HTML>
+	x.onload = function() {
+	//alert("load");
+		var y = x.contentWindow.document;
+		console.log(y);
+		y.body.style.backgroundColor = "green";
+		//document.getElementsByClassName('div.JqqAIg').style.backgroundColor="green";
+	};
+</script>-->
+</html>
